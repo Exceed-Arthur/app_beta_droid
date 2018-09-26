@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_lao"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarqr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:title="@string/app_name"
+        app:titleTextColor="@color/colorAccent">
+    </android.support.v7.widget.Toolbar>
+
+    <Button
+        android:id="@+id/button_myaddy"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginTop="59dp"
+        android:background="#ffffff"
+        android:contextClickable="true"
+        android:text="@string/button_myaddress"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/toolbarqr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/toolbarqr"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:focusable="true"
+        tools:text="@string/button_myaddress"
+        tools:textColor="@color/colorAccent" />
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        android:clickable="false"
+        android:focusable="true"
+        android:measureAllChildren="false"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation" />
+
+    <Switch
+        android:id="@+id/pref_title_vibrate"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/montserratmedium"
+        android:freezesText="false"
+        android:gravity="center_vertical"
+        android:text="@string/pref_title_vibrate"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarqr" />
+
+    <Switch
+        android:id="@+id/Silent"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/pref_title_vibrate"
+        android:fontFamily="@font/montserratmedium"
+        android:text="@string/pref_title_vibrate"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pref_title_vibrate"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="@string/pref_ringtone_silent" />
+
+
+    <CheckBox
+        android:id="@+id/minutes30"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginBottom="88dp"
+        android:background="@android:color/background_light"
+        android:contentDescription="@string/pref_title_sync_frequency"
+        android:fontFamily="@font/montserratregular"
+        android:text="@string/min30"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintEnd_toStartOf="@+id/hourbutton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/hourbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginBottom="88dp"
+        android:background="@color/colorPrimary"
+        android:contentDescription="@string/pref_title_sync_frequency"
+        android:focusable="auto"
+        android:fontFamily="@font/montserratregular"
+        android:text="@string/min60"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintEnd_toStartOf="@+id/daybutton"
+        app:layout_constraintStart_toEndOf="@+id/minutes30" />
+
+    <CheckBox
+        android:id="@+id/daybutton"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="88dp"
+        android:background="@android:color/background_light"
+        android:contentDescription="@string/pref_title_sync_frequency"
+        android:fontFamily="@font/montserratregular"
+        android:text="@string/day1"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/hourbutton" />
+
+    <TextView
+        android:id="@+id/sync_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/pref_title_sync_frequency"
+        android:fontFamily="@font/montserratregular"
+        android:text="@string/pref_title_sync_frequency"
+        android:textAllCaps="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/hourbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.409"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Silent"
+        app:layout_constraintVertical_bias="0.285" />
+
+    <ImageView
+        android:id="@+id/refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/sync_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.854"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Silent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_sync_black_24dp" />
+
+    <ImageView
+        android:id="@+id/refresh"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/sync_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Silent"
+        app:layout_constraintVertical_bias="0.04"
+        app:srcCompat="@drawable/ic_sync_black_24dp" />
+
+
+</android.support.constraint.ConstraintLayout>

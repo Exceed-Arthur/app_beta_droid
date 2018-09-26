@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/app_name"
+        app:titleTextColor="@color/colorAccent">
+    </android.support.v7.widget.Toolbar>
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        android:clickable="false"
+        android:measureAllChildren="false"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation" />
+
+    <Button
+        android:id="@+id/button_myaddy"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginTop="59dp"
+        android:background="#ffffff"
+        android:contextClickable="true"
+        android:text="@string/button_myaddress"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:focusable="true"
+        tools:text="@string/button_myaddress"
+        tools:textColor="@color/colorAccent" />
+
+    <Button
+        android:id="@+id/general_pref_page_butt"
+        style="?attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="114dp"
+        android:contentDescription="@string/pref_header_general"
+        android:contextClickable="true"
+        android:focusable="auto"
+        android:fontFamily="@font/montserratmedium"
+        android:onClick="setContentView"
+        android:text="@string/pref_header_general"
+        android:textAppearance="@style/RtlUnderlay.Widget.AppCompat.ActionButton"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        android:typeface="normal"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/notif_page_button"
+        android:layout_width="match_parent"
+        android:layout_height="114dp"
+        android:background="@android:color/background_light"
+        android:contentDescription="@string/pref_header_notifications"
+        android:contextClickable="true"
+        android:fontFamily="@font/montserratmedium"
+        android:onClick="setContentView"
+        android:text="@string/pref_header_notifications"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        android:typeface="normal"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/general_pref_page_butt"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/Display_name_page_button"
+        android:layout_width="match_parent"
+        android:layout_height="114dp"
+        android:layout_marginBottom="311dp"
+        android:background="@color/colorPrimary"
+        android:contentDescription="@string/pref_title_display_name"
+        android:fontFamily="@font/montserratmedium"
+        android:text="@string/pref_title_display_name"
+        android:textAlignment="center"
+        android:textAllCaps="?android:attr/windowSwipeToDismiss"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notif_page_button"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/recovery_backup_page_button"
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:background="@color/colorPrimary"
+        android:contentDescription="@string/pref_title_display_name"
+        android:fontFamily="@font/montserratmedium"
+        android:text="@string/recovery_page_button_title"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="24sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notif_page_button"
+        app:layout_constraintVertical_bias="1.0" />
+
+</android.support.constraint.ConstraintLayout>
