@@ -5,22 +5,17 @@
         android:enabled="true"
         android:icon="@drawable/baseline_trending_up_24px__1_"
         android:title="@string/navigation_exchange"
-        android:onClick="send2exchange"
-        android:fontFamily="@font/montserratmedium"
-        android:textColor="@color/colorAccent"
         android:visible="true" />
     <item
         android:id="@+id/navigation_home"
         android:checkable="false"
         android:enabled="true"
-        android:onClick="send2home"
         android:icon="@drawable/baseline_account_balance_24px__1_"
         android:title="@string/navigation_home"
         android:visible="true" />
     <item
         android:id="@+id/navigation_settings"
         android:enabled="true"
-        android:onClick="send2settings"
         android:icon="@drawable/baseline_settings_20px__2_"
         android:title="@string/navigation_settings"
         android:visible="true" />

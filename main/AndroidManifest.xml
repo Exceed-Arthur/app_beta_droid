@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.crackaddictedunicorn88.september132018">
+    package="com.example.crackaddictedunicorn88.september132018"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <application
         android:allowBackup="true"
@@ -21,17 +21,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".myaddy"
-            android:label="@string/app_name">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2" />
         <activity
-            android:name=".main_settings"
-            android:label="@string/title_activity_main_settings" />
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings">
+        </activity>
+
     </application>
 
 </manifest>

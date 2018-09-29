@@ -98,7 +98,7 @@
         app:layout_constraintTop_toBottomOf="@+id/general_pref_page_butt"
         app:layout_constraintVertical_bias="0.0" />
 
-    <Button
+    <EditText
         android:id="@+id/Display_name_page_button"
         android:layout_width="match_parent"
         android:layout_height="114dp"

@@ -55,47 +55,63 @@
         app:layout_constraintTop_toBottomOf="@+id/exc_qr_row">
 
         <ImageView
-            android:id="@+id/eth_logo1"
+            android:id="@+id/exc_logo1"
             android:layout_width="81dp"
-            android:layout_height="81dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
             android:layout_marginBottom="16dp"
-            android:layout_marginTop="16dp"
-            android:contentDescription="@string/ethereum_logo_description"
+            android:contentDescription="@string/exceed_logo"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/ic_launcher55" />
+
+        <ImageView
+            android:id="@+id/eth_logo1"
+            android:layout_width="81dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/ethereum_logo_description"
+            app:layout_constraintBottom_toTopOf="@+id/exc_logo1"
+            app:layout_constraintEnd_toStartOf="@+id/eth_copy_button"
+            app:layout_constraintStart_toEndOf="@+id/eth_exc_backup_image_button"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.4"
             app:srcCompat="@drawable/ethlogo" />
+
+        <ImageButton
+            android:id="@+id/eth_exc_backup_image_button"
+            android:layout_width="81dp"
+            android:layout_height="81dp"
+            android:layout_marginStart="32dp"
+            android:contentDescription="@string/content_description_qr_imgbutton"
+            android:src="@drawable/baseline_save_alt_24px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/eth_logo1"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/eth_copy_button"
-            android:layout_width="72dp"
-            android:layout_height="72dp"
+            android:layout_width="81dp"
+            android:layout_height="81dp"
+            android:layout_marginEnd="32dp"
             android:background="@android:color/background_light"
             android:fontFamily="@font/montserratmedium"
             android:text="@string/button_copy"
             android:textColor="@android:color/black"
-            android:textSize="18sp"
+            android:textSize="15sp"
             android:textStyle="bold"
             android:typeface="normal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/eth_logo1"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageButton
-            android:id="@+id/qr_image_eth"
-            android:layout_width="72dp"
-            android:layout_height="72dp"
-            android:layout_marginStart="32dp"
-            android:contentDescription="@string/content_description_qr_imgbutton"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/eth_logo1"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.569"
-            app:srcCompat="@drawable/qrcode_scan" />
+            tools:text="@string/recover" />
     </android.support.constraint.ConstraintLayout>
     <android.support.constraint.ConstraintLayout
         android:id="@+id/exc_qr_row"
@@ -111,51 +127,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbarqr">
 
-        <ImageView
-            android:id="@+id/exc_logo1"
-            android:layout_width="81dp"
-            android:layout_height="81dp"
-            android:layout_marginBottom="16dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
-            android:contentDescription="@string/exceed_logo"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_launcher55" />
-
-        <ImageButton
-            android:id="@+id/qr_button_exc"
-            android:layout_width="72dp"
-            android:layout_height="72dp"
-            android:layout_marginStart="32dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/exc_logo1"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.569"
-            app:srcCompat="@drawable/qrcode_scan" />
-
-        <Button
-            android:id="@+id/copy_button_exc"
-            android:layout_width="72dp"
-            android:layout_height="72dp"
-            android:background="@android:color/background_light"
-            android:contentDescription="@string/button_copy"
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
             android:fontFamily="@font/montserratmedium"
-            android:text="@string/button_copy"
-            android:textColor="@color/colorAccent"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:typeface="normal"
+            android:text="@string/help_message_1"
+            android:textAlignment="center"
+            android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/exc_logo1"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintHorizontal_bias="0.517"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.505" />
     </android.support.constraint.ConstraintLayout>
 
 
@@ -190,36 +177,38 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/bitcoin" />
 
-        <ImageButton
-            android:id="@+id/qr_image_button_btc2"
-            android:layout_width="72dp"
-            android:layout_height="72dp"
-            android:layout_marginStart="32dp"
-            android:contentDescription="@string/content_description_qr_imgbutton"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/bitcoin_logo"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.558"
-            app:srcCompat="@drawable/qrcode_scan" />
-
         <Button
             android:id="@+id/copy_btc"
-            android:layout_width="72dp"
-            android:layout_height="72dp"
+            android:layout_width="81dp"
+            android:layout_height="81dp"
             android:background="@android:color/background_light"
             android:contentDescription="@string/button_copy"
             android:fontFamily="@font/montserratmedium"
             android:text="@string/button_copy"
             android:textColor="@android:color/holo_orange_dark"
-            android:textSize="18sp"
+            android:textSize="15sp"
             android:textStyle="bold"
             android:typeface="normal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/bitcoin_logo"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/recover" />
+
+        <ImageButton
+            android:id="@+id/backup_qr_btc_imagebutton"
+            android:layout_width="81dp"
+            android:layout_height="81dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:contentDescription="@string/backup"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/bitcoin_logo"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/baseline_save_alt_24px" />
     </android.support.constraint.ConstraintLayout>
 
 </android.support.constraint.ConstraintLayout>
