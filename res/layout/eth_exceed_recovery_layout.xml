@@ -125,10 +125,10 @@
         android:layout_height="64dp"
         app:layout_constraintBottom_toTopOf="@+id/btc2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintHorizontal_bias="0.233"
         app:layout_constraintStart_toEndOf="@+id/btc_image_button"
         app:layout_constraintTop_toBottomOf="@+id/toolbar_btc_recover"
-        app:layout_constraintVertical_bias="0.705"
+        app:layout_constraintVertical_bias="0.734"
         app:srcCompat="@drawable/ethlogo" />
 
     <TextView

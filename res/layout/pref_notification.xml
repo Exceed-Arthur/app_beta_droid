@@ -157,11 +157,12 @@
         app:layout_constraintVertical_bias="0.285" />
 
     <ImageView
-        android:id="@+id/refresh"
+        android:id="@+id/refreshright"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="36dp"
+        android:contentDescription="@string/pref_title_sync_frequency"
         app:layout_constraintBottom_toTopOf="@+id/sync_view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.854"
@@ -176,6 +177,7 @@
         android:layout_height="24dp"
         android:layout_marginTop="36dp"
         android:layout_marginEnd="16dp"
+        android:contentDescription="@string/pref_title_sync_frequency"
         app:layout_constraintBottom_toTopOf="@+id/sync_view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.078"
