@@ -45,21 +45,40 @@
     <string name="title_send_btc">Send Bitcoin (BTC)</string>
     <string name="default_exceed_balance">0.00000000</string>
     <string name="default_ethereum_balance">0.000000</string>
+    <string name="instruction_send_eth">Instructions for sending eth</string>
     <string name="default_bitcoin_balance">0.00000000</string>
     <string name="paragraph_send_btc">Scan a QR code or copy/type in the address of the person you want to send Bitcoin to. Fingerprint may be required.</string>
     <string name="title_send_eth">Send Ethereum (ETH)</string>
     <string name="proceed">Proceed</string>
+    <string name="paragraph_send_eth">Scan a QR code or copy/type in the address of the person you want to send Ethereum to. Fingerprint may be required.</string>
     <string name="bitcoin_recover123">Import your Bitcoin wallet in .dat format and open with your private key.</string>
     <string name="import2">Import...</string>
+    <string name="bitcoin_address_friend">Bitcoin Address of Recipient</string>
+    <string name="china_exceed">超</string>
+    <string name="headliner2">Your Unique Digital Asset Experience.</string>
+    <string name="korea_exceed">넘다 지불</string>
     <string name="hint_pk">Paste your private key or passphrase here</string>
-    <string name="chinese">柑</string>
+    <string name="chinese"></string>
     <string name="instructions_choice">We highly reconmend you choose the create option. You may also import an existing Ethereum and or/Bitcoin wallet with your private key and JSON files. </string>
     <string name="create">Create New Wallet...</string>
     <string name="recover_new">Recover A Wallet...</string>
+    <string name="amount_in_ethereum">Amount in ETH</string>
     <string name="exceed_address_content">Exceed Address of a recipient</string>
     <string name="eth_address_friend">Ethereum Address Of Recipient</string>
+    <string name="insert_btc_address">1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2</string>
+    <string name="insert_eth_address">0x0000000000000000000000000000000000000000</string>
+    <string name="insert_exc_address">0xEX00000000000000000000000000000000000000</string>
+    <string name="insert_btc_amount">0.00000000</string>
+    <string name="insert_eth_amount">0.000000000</string>
+    <string name="insert_exc_amount">0.00000000</string>
+    <string name="confirmation">CONFIRMATION</string>
+    <string name="exceth">EXC/ETH</string>
+    <string name="excbtc">EXC/BTC</string>
+    <string name="excusdt">EXC/USDT</string>
+    <string name="coming_soon">Coming Soon</string>
+    <string name="close">Close</string>
+    <string name="eth2_address_friend">Ethereum Address Of Recipient</string>
     <string name="amount_in_exc">Amount In EXC</string>
-    <string name="bitcoin_address_friend">Bitcoin Address of Recipient</string>
     <string name="btc_amount_send">Amount in BTC</string>
     <string name="ethereum_logo_description">Ethereum Logo Image</string>
     <string name="paragraph_exc_send">Scan a QR code or copy/type in the address of the person you want to send Exceed to. Fingerprint may be required.</string>
@@ -68,10 +87,13 @@
     <string name="button_send_exc">Send</string>
     <string name="ethereum_balance_description">User balance of Ether</string>
     <string name="ethereum_table">Ethereum (ETH)</string>
+    <string name="amt">Amount:</string>
+    <string name="to">To:</string>
     <string name="ethereum_table_description">Table string of Ethereum row</string>
     <string name="button_exceed_send_title">Send</string>
     <string name="ethereum_balance">6.235127</string>
     <string name="recovery_page_button_title">Recovery/Backup</string>
+    <string name="explanation_exchange">Our own exchange platform will be live soon. In the mean time you can trade EXC on/at the following platforms.</string>
     <string name="content_description_qr_imgbutton">QR code for specific crypto blockchain</string>
     <string name="button_copy">Copy</string>
     <string name="myaddy_toolbar">Address/QR Center</string>
@@ -153,4 +175,7 @@
     <string name="check">Confirm</string>
 
     <string name="settings_header">Your Exceed Wallet Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

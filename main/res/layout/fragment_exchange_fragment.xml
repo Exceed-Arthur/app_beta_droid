@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="480dp"
+    android:layout_alignParentBottom="false"
+    android:layout_marginTop="58dp"
+    tools:context=".exchangeFragment">
+
+    <RelativeLayout
+        android:id="@+id/table_platforms"
+        android:layout_width="340dp"
+        android:layout_height="256dp"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentEnd="false"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="181dp">
+
+
+        <Button
+            android:id="@+id/exc_eth_0x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_exc_btc"
+            android:layout_alignStart="@+id/textView9"
+            android:layout_marginTop="18dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/montserratregular"
+            android:text="@string/excbtc"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/exc_usdt_0x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView9"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/montserratregular"
+            android:text="@string/excusdt"
+            android:textColor="@color/colorAccent"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/exc_btc_0x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView9"
+            android:layout_marginTop="128dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/montserratregular"
+            android:text="@string/exceth"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/exc_eth_tokenjar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_exc_btc"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/montserratregular"
+            android:text="@string/excbtc"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/exc_btc_tokenjar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/button_exc_btc"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/montserratregular"
+            android:text="@string/exceth"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/exc_tokenjar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="127dp"
+            android:layout_marginTop="64dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/montserratregular"
+            android:text="@string/excusdt"
+            android:textColor="@color/colorAccent"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_exc_eth_fork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_exc_btc"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="18dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/montserratregular"
+            android:text="@string/excbtc"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_exc_btc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="128dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/montserratregular"
+            android:text="@string/exceth"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="305dp"
+            android:fontFamily="@font/montserratregular"
+            android:text="ForkDelta"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tokenjarid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="305dp"
+            android:fontFamily="@font/montserratregular"
+            android:text="TokenJar"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="305dp"
+            android:fontFamily="@font/montserratregular"
+            android:paddingRight="0dp"
+            android:text="0X Protocol"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_exc_btc_fork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="64dp"
+            android:background="@color/colorPrimary"
+
+            android:fontFamily="@font/montserratregular"
+            android:text="@string/excusdt"
+            android:textColor="@color/colorAccent"
+            android:textSize="12sp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tile_explanation"
+        android:layout_width="269dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="64dp"
+        android:background="#d3d3d3"
+        android:backgroundTint="@color/colorPrimary"
+        android:fontFamily="@font/montserratlight"
+        android:text="@string/explanation_exchange"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/title_exchange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/table_platforms"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/montserratregular"
+        android:text="EXCHANGE"
+        android:textSize="24sp" />
+
+
+</FrameLayout>
