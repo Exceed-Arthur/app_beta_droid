@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="false"
+    tools:context=".settingsFragment">
+
+    <Button
+        android:id="@+id/general_pref_page_butt"
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:layout_marginTop="88dp"
+        android:background="@color/colorPrimary"
+        android:contentDescription="@string/pref_header_general"
+        android:contextClickable="true"
+        android:focusable="auto"
+        android:fontFamily="@font/montserratregular"
+        android:text="@string/pref_header_general"
+        android:textAppearance="@android:style/TextAppearance.Material"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/notif_page_button"
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:layout_marginTop="169dp"
+        android:background="@android:color/background_light"
+        android:contentDescription="@string/pref_header_notifications"
+        android:contextClickable="true"
+        android:fontFamily="@font/montserratmedium"
+        android:text="@string/pref_header_notifications"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        android:typeface="normal"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/Display_name_page_button"
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:layout_marginTop="258dp"
+        android:background="@color/colorPrimary"
+        android:contentDescription="@string/pref_title_display_name"
+        android:fontFamily="@font/montserratmedium"
+        android:hint="@string/pref_title_display_name"
+        android:textAlignment="center"
+        android:textAllCaps="?android:attr/windowSwipeToDismiss"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        android:textSize="24sp"
+        android:typeface="normal" />
+
+    <Button
+        android:id="@+id/recovery_backup_page_button"
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:layout_marginTop="346dp"
+        android:background="@color/colorPrimary"
+        android:contentDescription="@string/pref_title_display_name"
+        android:fontFamily="@font/montserratmedium"
+        android:text="@string/recovery_page_button_title"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="24sp"
+        android:typeface="normal" />
+
+    <TextView
+        android:id="@+id/settings2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/montserratregular"
+        android:text="@string/navigation_settings"
+        android:textAlignment="center"
+        android:textSize="36sp" />
+
+
+</FrameLayout>

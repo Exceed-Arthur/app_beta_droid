@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_btc_recover"
+        fontFamily="@font/montserratmedium"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:background="@color/colorPrimary"
+        android:fontFamily="@font/montserratmedium"
+        android:text="@string/bitcoin_recover123"
+        android:textAlignment="center"
+        app:fontFamily="@font/montserratmedium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/recover_new"
+        app:titleTextColor="@color/colorAccent"></android.support.v7.widget.Toolbar>
+
+    <ImageButton
+        android:id="@+id/btc_image_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@color/colorPrimary"
+        android:contentDescription="@string/bitcoin_logo_description"
+        android:scaleX="1.25"
+        android:scaleY="1.25"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_btc_recover"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/bitcoin" />
+
+    <TextView
+        android:id="@+id/btc_text"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/bitcoin_table"
+        android:fontFamily="@font/montserratregular"
+        android:text="@string/bitcoin_recover123"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btc_image_button"
+        app:layout_constraintVertical_bias="0.321" />
+
+    <TextView
+        android:id="@+id/btc2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/bitcoin"
+        android:fontFamily="@font/montserratmediumitalic"
+        android:text="@string/bitcoin_table"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btc_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btc_image_button"
+        app:layout_constraintVertical_bias="0.32" />
+
+    <Button
+        android:id="@+id/btc_import_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/bitcoin_recover123"
+        android:fontFamily="@font/montserratsemibold"
+        android:text="@string/import2"
+        android:textSize="18sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btc_text"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/btc_pk"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:fontFamily="@font/montserratmedium"
+        android:hint="@string/hint_pk"
+        android:inputType="textPassword"
+        android:text="Name"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btc_import_button"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/check_proceeed"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@color/colorPrimary"
+        android:contentDescription="@string/check"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btc_pk"
+        app:srcCompat="@drawable/baseline_check_circle_24px" />
+
+</android.support.constraint.ConstraintLayout>
