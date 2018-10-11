@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/baseline_account_balance_24px__1_"
+        android:orderInCategory="1"
+        android:title="@string/navigation_home" />
+
+    <item
+        android:id="@+id/navigation_exchange"
+        android:icon="@drawable/baseline_trending_up_24px__1_"
+        android:orderInCategory="2"
+        android:title="@string/navigation_exchange" />
+
+    <item
+        android:id="@+id/navigation_recieve"
+        android:icon="@drawable/baseline_attach_money_24px"
+        android:orderInCategory="3"
+        android:title="@string/navigation_meQr"
+        />
+
+    <item
+        android:id="@+id/navigation_settings"
+        android:icon="@drawable/baseline_settings_20px__2_"
+        android:orderInCategory="4"
+        android:title="@string/navigation_settings" />
+
+</menu>

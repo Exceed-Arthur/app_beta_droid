@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_lao"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <Switch
+        android:id="@+id/pref_title_vibrate"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/montserratmedium"
+        android:freezesText="false"
+        android:gravity="center_vertical"
+        android:text="@string/pref_title_vibrate"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/Silent"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/pref_title_vibrate"
+        android:fontFamily="@font/montserratmedium"
+        android:text="@string/pref_title_vibrate"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pref_title_vibrate"
+        tools:text="@string/pref_ringtone_silent" />
+
+
+    <CheckBox
+        android:id="@+id/minutes30"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/background_light"
+        android:contentDescription="@string/pref_title_sync_frequency"
+        android:fontFamily="@font/montserratregular"
+        android:text="@string/min30"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toStartOf="@+id/hourbutton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sync_view" />
+
+    <CheckBox
+        android:id="@+id/hourbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:background="@color/colorPrimary"
+        android:contentDescription="@string/pref_title_sync_frequency"
+        android:focusable="auto"
+        android:fontFamily="@font/montserratregular"
+        android:text="@string/min60"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toStartOf="@+id/daybutton"
+        app:layout_constraintStart_toEndOf="@+id/minutes30"
+        app:layout_constraintTop_toBottomOf="@+id/sync_view" />
+
+    <CheckBox
+        android:id="@+id/daybutton"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/background_light"
+        android:contentDescription="@string/pref_title_sync_frequency"
+        android:fontFamily="@font/montserratregular"
+        android:text="@string/day1"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/hourbutton"
+        app:layout_constraintTop_toBottomOf="@+id/sync_view" />
+
+    <TextView
+        android:id="@+id/sync_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/pref_title_sync_frequency"
+        android:fontFamily="@font/montserratregular"
+        android:text="@string/pref_title_sync_frequency"
+        android:textAllCaps="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/hourbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Silent"
+        app:layout_constraintVertical_bias="0.285" />
+
+    <TextView
+        android:id="@+id/title_notifcations_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/montserratregular"
+        android:text="@string/prefNotificationTitle"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
