@@ -1,0 +1,184 @@
+<resources>
+    <string name="app_name">Exceed Pay</string>
+    <string name="navigation_home">My Wallet</string>
+    <string name="navigation_settings">Preferences</string>
+    <string name="navigation_exchange">Exchange</string>
+    <string name="navigation_book">Addresses</string>
+    <string name="main_wallet_fragment_title">MAIN WALLET</string>
+    <string name="button_myaddress">My Addresses</string>
+    <string name="bitcoin">Bitcoin</string>
+    <string name="ethereum">Ethereum</string>
+    <string name="exceed">Exceed</string>
+    <string name="exceed_table">Exceed (EXC)</string>
+    <string name="exceed_balance_description">Balance of Exceed Tokens</string>
+    <string name="exceed_balance_user">11,543,230.45</string>
+    <string name="bitcoin_balance_user">0.27130656</string>
+    <string name="bitcoin_balance_description">Balance of Bitcoin</string>
+    <string name="bitcoin_logo_description">Bitcoin Logo Image</string>
+    <string name="bitcoin_table_description">Bitcoin Table String</string>
+    <string name="exceed_acronym">EXC</string>
+    <string name="bitcoin_acronym">BTC</string>
+    <string name="bitcoin_table">Bitcoin (BTC)</string>
+    <string name="send_btc_button">Send BTC</string>
+    <string name="send_exceed">Send EXC</string>
+    <string name="sent_eth_button">Send ETH</string>
+    <string name="ethereum_acronym">ETH</string>
+    <string name="navigation_meQr">Receive</string>
+    <string name="exceed_logo">Exceed Logo</string>
+    <string name="recover">Recover</string>
+    <string name="backup">Backup</string>
+    <string name="import_eth_instruction">Simply import your UTC wallet file/JSON with the file locator or paste your private key below. EXC and ETH may use the same wallet.</string>
+    <string name="help_message_1">Simply click save to backup individual blockchain-specific wallets and key(s) to your local drive. You can use the recover button to import a wallet from your device. May require fingerprint.</string>
+    <string name="exceed_name">Name of EXC crypto</string>
+    <string name="zero_balance">0</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="das">Digital Assets Simplified</string>
+    <string name="title_activity_settings">Preferences</string>
+    <string name="title_home">Home</string>
+    <string name="set_language">Preferred Language</string>
+    <string name="english">English</string>
+    <string name="korean">한국어</string>
+    <string name="default_bitcoin_send_value">0.00000000</string>
+    <string name="hint_title">Hint</string>
+    <string name="confirm_send_exc">Send Exceed (EXC)</string>
+    <string name="confirm_send_btc">Send Bitcoin (BTC)</string>
+    <string name="confirm_send_eth">Send Ethereum (ETH)</string>
+    <string name="title_send_exc">Send Exceed (EXC)</string>
+    <string name="title_send_btc">Send Bitcoin (BTC)</string>
+    <string name="default_exceed_balance">0.00000000</string>
+    <string name="default_ethereum_balance">0.000000</string>
+    <string name="instruction_send_eth">Instructions for sending eth</string>
+    <string name="default_bitcoin_balance">0.00000000</string>
+    <string name="paragraph_send_btc">Scan a QR code or copy/type in the address of the person you want to send Bitcoin to. Fingerprint may be required.</string>
+    <string name="title_send_eth">Send Ethereum (ETH)</string>
+    <string name="proceed">Proceed</string>
+    <string name="paragraph_send_eth">Scan a QR code or copy/type in the address of the person you want to send Ethereum to. Fingerprint may be required.</string>
+    <string name="bitcoin_recover123">Import your Bitcoin wallet in .dat format and open with your private key.</string>
+    <string name="import2">Import...</string>
+    <string name="bitcoin_address_friend">Bitcoin Address of Recipient</string>
+    <string name="china_exceed">超</string>
+    <string name="headliner2">Your Unique Digital Asset Experience.</string>
+    <string name="korea_exceed">넘다 지불</string>
+    <string name="hint_pk">Paste your private key or passphrase here</string>
+    <string name="chinese"></string>
+    <string name="instructions_choice">We highly reconmend you choose the create option. You may also import an existing Ethereum and or/Bitcoin wallet with your private key and JSON files. </string>
+    <string name="create">Create New Wallet...</string>
+    <string name="recover_new">Recover A Wallet...</string>
+    <string name="amount_in_ethereum">Amount in ETH</string>
+    <string name="exceed_address_content">Exceed Address of a recipient</string>
+    <string name="eth_address_friend">Ethereum Address Of Recipient</string>
+    <string name="insert_btc_address">1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2</string>
+    <string name="insert_eth_address">0x0000000000000000000000000000000000000000</string>
+    <string name="insert_exc_address">0xEX00000000000000000000000000000000000000</string>
+    <string name="insert_btc_amount">0.00000000</string>
+    <string name="insert_eth_amount">0.000000000</string>
+    <string name="insert_exc_amount">0.00000000</string>
+    <string name="confirmation">CONFIRMATION</string>
+    <string name="exceth">EXC/ETH</string>
+    <string name="excbtc">EXC/BTC</string>
+    <string name="prefNotificationTitle">NOTIFICATIONS</string>
+    <string name="excusdt">EXC/USDT</string>
+    <string name="coming_soon">Coming Soon</string>
+    <string name="close">Close</string>
+    <string name="eth2_address_friend">Ethereum Address Of Recipient</string>
+    <string name="amount_in_exc">Amount In EXC</string>
+    <string name="btc_amount_send">Amount in BTC</string>
+    <string name="ethereum_logo_description">Ethereum Logo Image</string>
+    <string name="paragraph_exc_send">Scan a QR code or copy/type in the address of the person you want to send Exceed to. Fingerprint may be required.</string>
+    <string name="button_send_btc">Send</string>
+    <string name="button_send_eth">Send</string>
+    <string name="button_send_exc">Send</string>
+    <string name="ethereum_balance_description">User balance of Ether</string>
+    <string name="ethereum_table">Ethereum (ETH)</string>
+    <string name="amt">Amount:</string>
+    <string name="to">To:</string>
+    <string name="ethereum_table_description">Table string of Ethereum row</string>
+    <string name="button_exceed_send_title">Send</string>
+    <string name="ethereum_balance">6.235127</string>
+    <string name="recovery_page_button_title">Recovery/Backup</string>
+    <string name="explanation_exchange">Our own exchange platform will be live soon. In the mean time you can trade EXC on/at the following platforms.</string>
+    <string name="content_description_qr_imgbutton">QR code for specific crypto blockchain</string>
+    <string name="button_copy">Copy</string>
+    <string name="myaddy_toolbar">Address/QR Center</string>
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display Name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; Sync</string>
+
+    <string name="pref_title_sync_frequency">Sync Frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="header_data_synch_settings">Data/Sync Settings</string>
+    <string name="min30">30 Min</string>
+    <string name="min60">1 Hour</string>
+    <string name="day1">1 Day</string>
+    <string name="check">Confirm</string>
+
+    <string name="settings_header">Your Exceed Wallet Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

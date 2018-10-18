@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:layout_marginEnd="164dp"
+        android:clickable="true"
         android:contentDescription="@string/korean"
         android:fontFamily="@font/montserratregular"
         android:text="@string/china_exceed"
@@ -43,6 +44,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="100dp"
+        android:checked="false"
+        android:clickable="false"
         android:contentDescription="@string/english"
         android:fontFamily="@font/montserratregular"
         android:text="@string/english"
@@ -51,8 +54,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/set_lang"
-        app:layout_constraintVertical_bias="0.282" />
+        app:layout_constraintTop_toBottomOf="@+id/set_lang" />
 
     <CheckBox
         android:id="@+id/checkBox4"
@@ -60,6 +62,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:layout_marginEnd="16dp"
+        android:clickable="true"
         android:contentDescription="@string/korean"
         android:fontFamily="@font/montserratregular"
         android:text="@string/korean"

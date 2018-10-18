@@ -16,7 +16,7 @@
         android:layout_alignParentEnd="false"
         android:layout_marginStart="36dp"
         android:layout_marginTop="216dp"
-        android:layout_marginEnd="30dp">
+        android:layout_marginEnd="36dp">
 
 
         <Button
@@ -162,7 +162,7 @@
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/button_exc_btc_fork"
+            android:id="@+id/button_exc_usdt_fork"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -181,7 +181,7 @@
 
     <TextView
         android:id="@+id/tile_explanation"
-        android:layout_width="269dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
         android:layout_marginTop="128dp"
@@ -190,16 +190,16 @@
         android:backgroundTint="@color/colorPrimary"
         android:fontFamily="@font/montserratlight"
         android:text="@string/explanation_exchange"
+        android:textAlignment="center"
         android:textColor="@color/colorAccent"
-        android:textSize="12sp"
+        android:textSize="14sp"
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/title_exchange"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="128dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="64dp"
         android:fontFamily="@font/montserratregular"
         android:text="EXCHANGE"
         android:textAlignment="center"

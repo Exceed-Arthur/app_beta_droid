@@ -35,7 +35,7 @@
         android:layout_marginEnd="16dp"
         android:contentDescription="@string/pref_title_vibrate"
         android:fontFamily="@font/montserratmedium"
-        android:text="@string/pref_title_vibrate"
+        android:text="@string/pref_ringtone_silent"
         android:textAlignment="center"
         android:textColor="@color/colorAccent"
         android:textSize="24sp"
@@ -43,7 +43,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pref_title_vibrate"
-        tools:text="@string/pref_ringtone_silent" />
+         />
 
 
     <CheckBox

@@ -14,7 +14,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="128dp"
         android:contentDescription="@string/exceed_logo"
-        app:srcCompat="@drawable/image2vector__2_" />
+        app:srcCompat="@drawable/image2vector__2" />
 
     <TextView
         android:id="@+id/splash_title"
