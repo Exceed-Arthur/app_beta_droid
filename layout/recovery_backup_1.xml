@@ -30,6 +30,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
+        android:background="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -68,13 +69,16 @@
             android:layout_width="81dp"
             android:layout_height="81dp"
             android:layout_marginStart="32dp"
+            android:background="@color/colorPrimary"
             android:contentDescription="@string/content_description_qr_imgbutton"
             android:src="@drawable/baseline_save_alt_24px"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/eth_logo1"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintHorizontal_chainStyle="spread_inside"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.507" />
 
         <Button
             android:id="@+id/eth_recover_final_button"
@@ -94,14 +98,16 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:text="@string/recover" />
     </android.support.constraint.ConstraintLayout>
+
     <android.support.constraint.ConstraintLayout
         android:id="@+id/exc_qr_row"
         android:layout_width="match_parent"
         android:layout_height="144dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorPrimary"
         app:layout_constraintBottom_toTopOf="@+id/ether_qr_row"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -114,6 +120,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginEnd="24dp"
+            android:background="@color/colorPrimary"
             android:fontFamily="@font/montserratmedium"
             android:text="@string/help_message_1"
             android:textAlignment="center"
@@ -129,11 +136,12 @@
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/bitcoin_qr_row"
-        android:layout_width="368dp"
+        android:layout_width="match_parent"
         android:layout_height="140dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
+        android:background="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ether_qr_row">
@@ -159,6 +167,7 @@
             android:id="@+id/recover_button_final"
             android:layout_width="81dp"
             android:layout_height="81dp"
+            android:layout_marginEnd="32dp"
             android:background="@android:color/background_light"
             android:contentDescription="@string/button_copy"
             android:fontFamily="@font/montserratmedium"
@@ -169,8 +178,10 @@
             android:typeface="normal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/bitcoin_logo"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.508"
             tools:text="@string/recover" />
 
         <ImageButton
@@ -179,6 +190,8 @@
             android:layout_height="81dp"
             android:layout_marginStart="32dp"
             android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="@color/colorPrimary"
             android:contentDescription="@string/backup"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/bitcoin_logo"

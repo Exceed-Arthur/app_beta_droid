@@ -3,8 +3,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar_text_send"
@@ -75,7 +77,7 @@
 
     <EditText
         android:id="@+id/edit_btc_send_amount"
-        android:layout_width="177dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:contentDescription="@string/btc_amount_send"
@@ -118,7 +120,7 @@
 
     <EditText
         android:id="@+id/address_btc_friend"
-        android:layout_width="177dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
         android:contentDescription="@string/bitcoin_address_friend"
@@ -129,7 +131,7 @@
         android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="@+id/edit_btc_send_amount"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintHorizontal_bias="0.173"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btc_text"
         app:layout_constraintVertical_bias="0.0" />

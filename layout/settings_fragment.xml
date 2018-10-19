@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_alignParentBottom="false"
+    android:background="@color/colorPrimary"
     tools:context=".settingsFragment">
 
     <Button
@@ -38,27 +39,11 @@
         android:typeface="normal"
         android:visibility="visible" />
 
-    <EditText
-        android:id="@+id/Display_name_page_button"
-        android:layout_width="match_parent"
-        android:layout_height="81dp"
-        android:layout_marginTop="258dp"
-        android:background="@color/colorPrimary"
-        android:contentDescription="@string/pref_title_display_name"
-        android:fontFamily="@font/montserratmedium"
-        android:hint="@string/pref_title_display_name"
-        android:textAlignment="center"
-        android:textAllCaps="?android:attr/windowSwipeToDismiss"
-        android:textColor="@color/colorAccent"
-        android:textColorHint="@color/colorAccent"
-        android:textSize="24sp"
-        android:typeface="normal" />
-
     <Button
         android:id="@+id/recovery_backup_page_button"
         android:layout_width="match_parent"
         android:layout_height="81dp"
-        android:layout_marginTop="346dp"
+        android:layout_marginTop="249dp"
         android:background="@color/colorPrimary"
         android:contentDescription="@string/pref_title_display_name"
         android:fontFamily="@font/montserratmedium"
@@ -74,6 +59,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
         android:fontFamily="@font/montserratregular"
         android:text="@string/navigation_settings"
         android:textAlignment="center"

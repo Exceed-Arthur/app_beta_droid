@@ -10,13 +10,13 @@
         android:id="@+id/eth_logo2455"
         android:layout_width="81dp"
         android:layout_height="81dp"
-        android:layout_marginTop="49dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.093"
         app:srcCompat="@drawable/ethlogo" />
 
     <TextView
@@ -58,23 +58,21 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.513"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/qr_view_generated_eth"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
-        android:id="@+id/qr_random_eth"
+        android:id="@+id/qr_replace_eth"
         android:layout_width="216dp"
         android:layout_height="216dp"
-        android:layout_marginStart="84dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="84dp"
         android:layout_marginBottom="32dp"
         app:layout_constraintBottom_toTopOf="@+id/close_qr_eth_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/qr_title_454"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/qrcode_scan" />
 
 </android.support.constraint.ConstraintLayout>

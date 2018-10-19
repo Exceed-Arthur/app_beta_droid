@@ -16,24 +16,24 @@
             fontFamily="@font/montserratmedium"
             android:layout_width="wrap_content"
             android:layout_height="58dp"
-            android:background="@color/colorPrimary"
             android:fontFamily="@font/montserratmedium"
+            android:theme="@style/AppTheme"
             app:fontFamily="@font/montserratmedium"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"></android.support.v7.widget.Toolbar>
+            app:layout_constraintTop_toTopOf="parent"
+            app:title="@string/title_send_exc"
+            app:titleTextColor="@color/colorAccent"></android.support.v7.widget.Toolbar>
 
         <ImageView
             android:id="@+id/exc_logo3"
             android:layout_width="81dp"
             android:layout_height="81dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginBottom="412dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.501"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/exceed_toolbar_send"
-            app:layout_constraintVertical_bias="0.0"
             app:srcCompat="@drawable/ic_launcher55" />
 
         <TextView
@@ -60,7 +60,7 @@
             android:layout_marginTop="32dp"
             android:contentDescription="@string/confirm_send_exc"
             android:fontFamily="@font/montserratmediumitalic"
-            android:text="@string/confirm_send_exc"
+            android:text="@string/exceed_table"
             android:textColor="@color/colorAccent"
             android:textSize="24sp"
             android:textStyle="bold"
@@ -74,7 +74,7 @@
 
         <EditText
             android:id="@+id/amount_send_exc"
-            android:layout_width="221dp"
+            android:layout_width="200dp"
             android:layout_height="50dp"
             android:layout_marginStart="32dp"
             android:layout_marginTop="16dp"
@@ -86,19 +86,18 @@
             android:inputType="numberDecimal"
             android:selectAllOnFocus="true"
             android:textColor="@android:color/darker_gray"
-            android:textSize="14sp"
+            android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.006"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/exceed_paragraph_send"
-            app:layout_constraintVertical_bias="0.637" />
+            app:layout_constraintVertical_bias="0.758" />
 
         <Button
             android:id="@+id/exc_send_button"
             android:layout_width="wrap_content"
             android:layout_height="44dp"
-            android:layout_marginStart="32dp"
             android:layout_marginEnd="32dp"
             android:layout_marginBottom="16dp"
             android:background="@color/colorPrimary"
@@ -109,14 +108,14 @@
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.238"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/amount_send_exc"
             app:layout_constraintTop_toBottomOf="@+id/exceed_paragraph_send"
-            app:layout_constraintVertical_bias="0.401" />
+            app:layout_constraintVertical_bias="0.511" />
 
         <EditText
             android:id="@+id/address_exc_window"
-            android:layout_width="221dp"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
             android:layout_marginBottom="16dp"

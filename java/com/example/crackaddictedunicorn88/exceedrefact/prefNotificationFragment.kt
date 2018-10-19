@@ -75,13 +75,13 @@ class prefNotificationFragment : Fragment(), CompoundButton.OnCheckedChangeListe
                     prefs.edit().putInt(SharedPreferences.time, 1).apply()
                 }
                 R.id.hourbutton -> {
-                    time = 1
+                    time = 2
                     minutes30.isChecked = false
                     daybutton.isChecked = false
                     prefs.edit().putInt(SharedPreferences.time, 2).apply()
                 }
                 R.id.daybutton -> {
-                    time = 1
+                    time = 3
                     minutes30.isChecked = false
                     hourbutton.isChecked = false
                     prefs.edit().putInt(SharedPreferences.time, 3).apply()

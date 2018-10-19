@@ -8,15 +8,15 @@ import android.view.ViewGroup
 import android.widget.Button
 import kotlinx.android.synthetic.main.qr_bitcoin_popup_fragment.*
 
-class qrEthPopupFragment : Fragment(), View.OnClickListener {
+class qrBitcoinPopupFragment : Fragment(), View.OnClickListener {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
-        val view: View = inflater.inflate(R.layout.qr_eth_popup_fragment, container, false)
+        val view: View = inflater.inflate(R.layout.qr_bitcoin_popup_fragment, container, false)
 
-        val closeEthQrPopupFragment1: Button? = view.findViewById(R.id.close_qr_eth_button) as Button
+        val closeBtcQrPopupFragment1: Button? = view.findViewById(R.id.close_btc_qr_button) as Button
 
-        closeEthQrPopupFragment1?.setOnClickListener(this)
+        closeBtcQrPopupFragment1?.setOnClickListener(this)
 
         return view
     }
@@ -29,7 +29,8 @@ class qrEthPopupFragment : Fragment(), View.OnClickListener {
 
     override fun onClick(v: View?) {
         when (v?.id) {
-            R.id.close_qr_eth_button -> {
+            R.id.close_btc_qr_button -> {
+                // createSendExcFragment()
                 (activity as MainActivity).createStartQRFragment()
             }
         }
