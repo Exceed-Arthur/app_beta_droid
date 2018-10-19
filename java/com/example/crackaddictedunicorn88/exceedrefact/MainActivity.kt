@@ -65,6 +65,7 @@ open class MainActivity : AppCompatActivity() {
         transaction.commit()
     }
 
+
     fun createWalletFragment() {
         val transaction = manager.beginTransaction()
         val fragment = user_wallet_fragment()
@@ -82,6 +83,16 @@ open class MainActivity : AppCompatActivity() {
         transaction.addToBackStack(null)
         transaction.commit()
     }
+
+    fun createConfirmExcFragment(bundle: Bundle) {
+        val transaction = manager.beginTransaction()
+        val fragment = confirmSendExcFragment()
+        fragment.arguments=bundle
+        transaction.replace(R.id.fragmentholder, fragment)
+        transaction.addToBackStack(null)
+        transaction.commit()
+    }
+
 
     fun createSendBtcFragment() {
         val transaction = manager.beginTransaction()

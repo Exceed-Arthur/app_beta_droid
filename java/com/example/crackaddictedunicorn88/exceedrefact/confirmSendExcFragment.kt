@@ -1,21 +1,11 @@
 package com.example.crackaddictedunicorn88.exceedrefact
 
-import android.support.v4.app.FragmentManager
-import kotlinx.android.synthetic.main.send_exc_layout.*;
-import kotlinx.android.synthetic.main.activity_main.*
-import android.content.Intent
 import android.os.Bundle
-import android.support.design.widget.BottomNavigationView.OnNavigationItemSelectedListener
 import android.support.v4.app.Fragment
-import android.support.v4.app.FragmentTransaction
-import android.support.v7.app.AppCompatActivity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.ViewManager
-import android.widget.Button
-import kotlinx.android.synthetic.main.activity_main.*
-import com.example.crackaddictedunicorn88.exceedrefact.*
+import kotlinx.android.synthetic.main.exc_fragment_confirm_send.*
 
 
 class confirmSendExcFragment : Fragment() {
@@ -26,11 +16,17 @@ class confirmSendExcFragment : Fragment() {
 
         // Inflate the layout for this fragment
 
-
-        val input_exc_amount:View = amount_send_exc
-
         val view: View = inflater.inflate(R.layout.exc_fragment_confirm_send, container, false)
+
         return view
+    }
+
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+        val address = arguments!!.getString("address")
+        val amount = arguments!!.getString("amount")
+        view_confirm_exc_address.text = address
+        view_confirm_exc_amount_send.text = amount
     }
 
 
