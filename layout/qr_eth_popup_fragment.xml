@@ -1,78 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <ImageView
-        android:id="@+id/eth_logo2455"
-        android:layout_width="81dp"
-        android:layout_height="81dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.093"
-        app:srcCompat="@drawable/ethlogo" />
+    <FrameLayout
+        android:id="@+id/replace_qr_eth"
+        android:layout_width="216dp"
+        android:layout_height="216dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="216dp"
+        android:background="@drawable/qrcode_scan">
+
+    </FrameLayout>
 
     <TextView
         android:id="@+id/qr_title_454"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="169dp"
         android:fontFamily="@font/montserratmedium"
+        android:gravity="center_horizontal"
         android:text="QR CODE"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/eth_logo2455"
-        app:layout_constraintVertical_bias="0.0" />
+        tools:layout_editor_absoluteY="542dp" />
 
-    <View
-        android:id="@+id/qr_view_generated_eth"
-        android:layout_width="216dp"
-        android:layout_height="216dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginBottom="32dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/qr_title_454"
-        app:layout_constraintVertical_bias="0.0" />
+    <ImageView
+        android:id="@+id/eth_logo2455"
+        android:layout_width="81dp"
+        android:layout_height="81dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="48dp"
+        app:srcCompat="@drawable/ethlogo" />
 
     <Button
         android:id="@+id/close_qr_eth_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginBottom="32dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="484dp"
         android:background="@color/colorPrimary"
         android:fontFamily="@font/montserratregular"
         android:text="@string/close"
+        android:textColor="@android:color/holo_red_dark"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/qr_view_generated_eth"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageView
-        android:id="@+id/qr_replace_eth"
-        android:layout_width="216dp"
-        android:layout_height="216dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginBottom="32dp"
-        app:layout_constraintBottom_toTopOf="@+id/close_qr_eth_button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/qr_title_454"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/qrcode_scan" />
-
-</android.support.constraint.ConstraintLayout>
+</FrameLayout>

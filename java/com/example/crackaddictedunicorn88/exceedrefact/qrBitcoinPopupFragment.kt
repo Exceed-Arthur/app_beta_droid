@@ -14,7 +14,7 @@ class qrBitcoinPopupFragment : Fragment(), View.OnClickListener {
 
         val view: View = inflater.inflate(R.layout.qr_bitcoin_popup_fragment, container, false)
 
-        val closeBtcQrPopupFragment1: Button? = view.findViewById(R.id.close_btc_qr_button) as Button
+        val closeBtcQrPopupFragment1: Button? = view.findViewById(R.id.close_btc) as Button
 
         closeBtcQrPopupFragment1?.setOnClickListener(this)
 
@@ -29,7 +29,7 @@ class qrBitcoinPopupFragment : Fragment(), View.OnClickListener {
 
     override fun onClick(v: View?) {
         when (v?.id) {
-            R.id.close_btc_qr_button -> {
+            R.id.close_btc -> {
                 // createSendExcFragment()
                 (activity as MainActivity).createStartQRFragment()
             }

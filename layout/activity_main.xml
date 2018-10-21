@@ -8,6 +8,13 @@
     tools:context=".MainActivity">
 
 
+    <FrameLayout
+        android:id="@+id/fragment_holder_alternative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"

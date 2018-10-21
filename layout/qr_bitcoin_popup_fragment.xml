@@ -1,75 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame_qr_bitcoin_fragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary">
 
     <ImageView
-        android:id="@+id/qr_btc_logo2"
+        android:id="@+id/bitcoinlogo241"
         android:layout_width="81dp"
         android:layout_height="81dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.092"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="48dp"
         app:srcCompat="@drawable/bitcoin" />
 
     <TextView
-        android:id="@+id/qr_heado"
+        android:id="@+id/qr_code_btc_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="27dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="169dp"
         android:fontFamily="@font/montserratmedium"
         android:text="QR CODE"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/qr_btc_logo2"
-        app:layout_constraintVertical_bias="0.0" />
+        android:textSize="18sp" />
 
-    <View
-        android:id="@+id/qr_generated_btc"
+    <FrameLayout
+        android:id="@+id/frame_btc_qr_image"
         android:layout_width="216dp"
         android:layout_height="216dp"
-        android:layout_marginTop="32dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/qr_heado"
-        app:layout_constraintVertical_bias="0.0" />
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="216dp"
+        android:background="@drawable/qrcode_scan_btc">
+
+    </FrameLayout>
 
     <Button
-        android:id="@+id/close_btc_qr_button"
-        android:layout_width="0dp"
+        android:id="@+id/close_btc"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="128dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="128dp"
-        android:layout_marginBottom="32dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="484dp"
         android:background="@color/colorPrimary"
-        android:fontFamily="@font/montserratregular"
+        android:fontFamily="@font/montserratmedium"
         android:text="@string/close"
-        android:textColor="@android:color/holo_orange_dark"
+        android:textColor="@android:color/holo_red_dark"
         android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/qr_generated_btc" />
-
-    <ImageView
-        android:id="@+id/qr_replace_bitcoin"
-        android:layout_width="216dp"
-        android:layout_height="216dp"
-        app:layout_constraintBottom_toTopOf="@+id/close_btc_qr_button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/qr_heado"
-        app:srcCompat="@drawable/qrcode_scan" />
-</android.support.constraint.ConstraintLayout>
+        android:textStyle="bold" />
+</FrameLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_help"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/whatis2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="16dp"
+        android:text="What is bitcoin?"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/help_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/montserratregular"
+        android:text="FAQ"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/answer_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/montserratregular"
+        android:text="@string/answer_2"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/background_dark"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/question_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/montserratregular"
+        android:text="@string/what_is_a_blockchain"
+        android:textColor="@android:color/background_dark"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/what_is_exceed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="210dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/montserratregular"
+        android:text="@string/question_1"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/answer_2_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/montserratregular"
+        android:text="@string/what_is_exceed"
+        android:textColor="@android:color/background_dark"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/how_to_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="367dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/montserratregular"
+        android:text="@string/question_2"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/what_is_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="467dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/montserratregular"
+        android:text="You can send, recieve, and exchange with this app (coming soon). You can use the backup section to save your wallet files and keys. More information can be found at our website: https//www,exceed-io.com"
+        android:textColor="@android:color/background_dark"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/how_do_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="437dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/montserratregular"
+        android:text="What can I do with this App?"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp" />
+
+</FrameLayout>

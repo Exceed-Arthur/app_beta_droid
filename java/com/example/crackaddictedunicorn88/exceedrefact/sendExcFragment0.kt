@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import kotlinx.android.synthetic.main.exc_fragment_confirm_send.*
 import kotlinx.android.synthetic.main.send_exc_layout.*
 
 
@@ -23,6 +24,7 @@ class sendExcFragment0 : Fragment(), View.OnClickListener {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         exc_send_button.setOnClickListener(this)
+
     }
 
     fun onBtnSend() {
@@ -42,7 +44,7 @@ class sendExcFragment0 : Fragment(), View.OnClickListener {
 
     override fun onClick(p0: View?) {
         onBtnSend();
-    }
 
+    }
 
 }

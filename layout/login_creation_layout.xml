@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frame_login_create"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relative_login_creation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/lock_logo"
+            android:layout_width="81dp"
+            android:layout_height="81dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="124dp"
+            app:srcCompat="@drawable/baseline_lock_24px" />
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimary"
+            android:textAlignment="center"
+            android:theme="@style/AppTheme"
+            app:fontFamily="@font/montserratmedium"
+            app:title="@string/app_name"
+            app:titleTextColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/login_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lock_logo"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="206dp"
+            android:fontFamily="@font/montserratregular"
+            android:gravity="center_vertical|center_horizontal"
+            android:padding="32dp"
+            android:text="@string/login_paragraph"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/pin_enter_box_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pin_enter_box_1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:fontFamily="@font/montserratregular"
+            android:hint="@string/login_hint_2"
+            android:inputType="numberPassword"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/pin_enter_box_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:fontFamily="@font/montserratregular"
+            android:hint="@string/login_hint_1"
+            android:inputType="numberPassword"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/login_create_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pin_enter_box_2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/gradient"
+            android:fontFamily="@font/montserratregular"
+            android:text="@string/login_header"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/title_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="72dp"
+            android:fontFamily="@font/montserratregular"
+            android:text="ASSET PROTECTION"
+            android:textAlignment="center"
+            android:textColor="@color/design_default_color_primary"
+            android:textSize="24sp" />
+
+    </RelativeLayout>
+</FrameLayout>

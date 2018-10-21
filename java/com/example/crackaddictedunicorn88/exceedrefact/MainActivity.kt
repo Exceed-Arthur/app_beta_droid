@@ -13,9 +13,18 @@ import kotlinx.android.synthetic.main.activity_main.*
 import java.net.URL
 import android.content.Intent
 import android.net.Uri
+import android.R.id.edit
+
+
+
+
 
 
 open class MainActivity : AppCompatActivity() {
+
+
+
+    
 
     fun createStartQRFragment() {
         val transaction = manager.beginTransaction()
@@ -24,6 +33,14 @@ open class MainActivity : AppCompatActivity() {
         transaction.addToBackStack(null)
         transaction.commit()
     }
+    fun createCreatePinFragment() {
+        val transaction = manager.beginTransaction()
+        val fragment = createPinFragment()
+        transaction.replace(R.id.fragmentholder, fragment)
+        transaction.addToBackStack(null)
+        transaction.commit()
+    }
+
 
 
     fun createexchangeFragment() {
@@ -33,6 +50,16 @@ open class MainActivity : AppCompatActivity() {
         transaction.addToBackStack(null)
         transaction.commit()
     }
+
+
+    fun createSplashFragment() {
+        val transaction = manager.beginTransaction()
+        val fragment = splashFragment()
+        transaction.replace(R.id.fragment_holder_alternative, fragment)
+        transaction.addToBackStack(null)
+        transaction.commit()
+    }
+
 
     fun createSettingsFragment() {
         val transaction = manager.beginTransaction()
@@ -102,6 +129,15 @@ open class MainActivity : AppCompatActivity() {
         transaction.commit()
     }
 
+    fun createConfirmBtcFragment(bundle: Bundle) {
+        val transaction = manager.beginTransaction()
+        val fragment = confirmSendBtcFragment()
+        fragment.arguments=bundle
+        transaction.replace(R.id.fragmentholder, fragment)
+        transaction.addToBackStack(null)
+        transaction.commit()
+    }
+
     fun createSendEthFragment() {
         val transaction = manager.beginTransaction()
         val fragment = sendEthFragment0()
@@ -109,6 +145,15 @@ open class MainActivity : AppCompatActivity() {
         transaction.addToBackStack(null)
         transaction.commit()
 
+    }
+
+    fun createConfirmEthFragment(bundle: Bundle) {
+        val transaction = manager.beginTransaction()
+        val fragment = confirmSendEthFragment()
+        fragment.arguments=bundle
+        transaction.replace(R.id.fragmentholder, fragment)
+        transaction.addToBackStack(null)
+        transaction.commit()
     }
 
     fun createQrBitcoinPopupFragment() {
@@ -201,5 +246,38 @@ open class MainActivity : AppCompatActivity() {
         val fragmentTransaction: FragmentTransaction = supportFragmentManager.beginTransaction()
         fragmentTransaction.replace(R.id.fragmentholder, user_wallet_fragment())
         fragmentTransaction.commit()
+
+    }
+
+    private fun checkFirstRun() {
+
+        val PREFS_NAME = "MyPrefsFile"
+        val PREF_VERSION_CODE_KEY = "version_code"
+        val DOESNT_EXIST = -1
+
+        // Get current version code
+        val currentVersionCode = BuildConfig.VERSION_CODE
+
+        // Get saved version code
+        val prefs = getSharedPreferences(PREFS_NAME, MODE_PRIVATE)
+        val savedVersionCode = prefs.getInt(PREF_VERSION_CODE_KEY, DOESNT_EXIST)
+
+        // Check for first run or upgrade
+        if (currentVersionCode == savedVersionCode) {
+
+            // This is just a normal run
+            return
+
+        } else if (savedVersionCode == DOESNT_EXIST) {
+
+            // TODO This is a new install (or the user cleared the shared preferences)
+
+        } else if (currentVersionCode > savedVersionCode) {
+
+            // TODO This is an upgrade
+        }
+
+        // Update the shared preferences with the current version code
+        prefs.edit().putInt(PREF_VERSION_CODE_KEY, currentVersionCode).apply()
     }
 }

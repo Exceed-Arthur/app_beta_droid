@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frame_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/splash_box_22"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient">
+
+        <TextView
+            android:id="@+id/startButton"
+            android:layout_width="64dp"
+            android:layout_height="52dp"
+            android:layout_below="@+id/global_pin_prompt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/edittext_rounded_corners"
+            android:fontFamily="@font/montserratregular"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Start"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/global_pin_prompt"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/splash_title_IO"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="64dp"
+            android:background="@drawable/edittext_rounded_corners"
+            android:ems="10"
+            android:gravity="center_vertical|center_horizontal"
+            android:hint="Enter PIN"
+            android:inputType="numberPassword"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/exceed_logo_big"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="128dp"
+            android:contentDescription="@string/exceed_logo"
+            app:srcCompat="@drawable/image2vector__2" />
+
+        <TextView
+            android:id="@+id/splash_title_IO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/montserratmedium"
+            android:text="EXCEED IO"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="36sp" />
+
+    </RelativeLayout>
+</FrameLayout>

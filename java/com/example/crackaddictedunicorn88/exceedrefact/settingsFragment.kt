@@ -14,13 +14,11 @@ class settingsFragment : Fragment(), View.OnClickListener {
         val view: View = inflater.inflate(R.layout.settings_fragment, container, false)
 
         val genPrefStartButton: Button? = view.findViewById(R.id.general_pref_page_butt) as Button
-        val recoverybackup_btn0: Button? = view.findViewById(R.id.recovery_backup_page_button) as Button
-        val prefNotification_btn0: Button? = view.findViewById(R.id.notif_page_button) as Button
-
         genPrefStartButton?.setOnClickListener(this)
+        val recoverybackup_btn0: Button? = view.findViewById(R.id.recovery_backup_page_button) as Button
         recoverybackup_btn0?.setOnClickListener(this)
+        val prefNotification_btn0: Button? = view.findViewById(R.id.notif_page_button) as Button
         prefNotification_btn0?.setOnClickListener(this)
-
 
         return view
     }

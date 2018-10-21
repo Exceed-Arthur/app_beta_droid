@@ -39,7 +39,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/exc_qr_row">
 
@@ -57,7 +57,7 @@
                 app:srcCompat="@drawable/ethlogo" />
 
             <Button
-                android:id="@+id/eth_recover_final_button"
+                android:id="@+id/eth_copy_button"
                 android:layout_width="72dp"
                 android:layout_height="72dp"
                 android:background="@android:color/background_light"
@@ -155,59 +155,51 @@
             android:layout_marginEnd="8dp"
             android:background="@color/colorPrimary"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ether_qr_row">
-
-            <ImageButton
-                android:id="@+id/bitcoin_logo"
-                android:layout_width="81dp"
-                android:layout_height="81dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="16dp"
-                android:adjustViewBounds="false"
-                android:background="@android:color/background_light"
-                android:contentDescription="@string/bitcoin_logo_description"
-                android:elevation="2dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/bitcoin" />
 
             <ImageButton
                 android:id="@+id/qr_image_button_btc2"
                 android:layout_width="72dp"
                 android:layout_height="72dp"
                 android:layout_marginStart="32dp"
-                android:layout_marginEnd="32dp"
                 android:contentDescription="@string/content_description_qr_imgbutton"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/bitcoin_logo"
-                app:layout_constraintHorizontal_bias="0.25"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/qrcode_scan" />
 
+            <ImageView
+                android:id="@+id/btc_logo_2341"
+                android:layout_width="81dp"
+                android:layout_height="81dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/bitcoin" />
+
             <Button
-                android:id="@+id/copy_btc"
+                android:id="@+id/copy_address_btc"
                 android:layout_width="72dp"
                 android:layout_height="72dp"
                 android:layout_marginStart="32dp"
-                android:layout_marginEnd="32dp"
-                android:background="@android:color/background_light"
-                android:contentDescription="@string/button_copy"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="32dp"
+                android:background="@color/colorPrimary"
                 android:fontFamily="@font/montserratmedium"
                 android:text="@string/button_copy"
                 android:textColor="@android:color/holo_orange_dark"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:typeface="normal"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.571"
-                app:layout_constraintStart_toEndOf="@+id/bitcoin_logo"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintStart_toEndOf="@+id/btc_logo_2341"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
         </android.support.constraint.ConstraintLayout>
 
     </android.support.constraint.ConstraintLayout>
